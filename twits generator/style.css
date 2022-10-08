@@ -1,0 +1,134 @@
+body{
+    background-color: rgb(27, 33, 39);
+    color: white;
+}
+:root{
+    --hue: 207;
+    --text-color-light: hsl(var(--hue), 12%, 95%);
+}
+
+.all{
+    width: 100%;
+    height: 100vh;
+    background-color:  rgb(27, 33, 39);
+    display: flex;
+    margin-top: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card{
+    background-color: aliceblue;
+    color: black;
+    width: 22rem;
+    height: fit-content;
+    border-radius: .5rem;
+    border: .15rem solid salmon;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card .card-text{
+    display: flex;
+    flex-direction: row;
+}
+.card .up{
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+    color: salmon;
+}
+.card .down{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: salmon;
+    display: flex;
+    align-items: flex-end;
+}
+.auth h4{
+    cursor: pointer;
+    width: 100%;
+    padding-left: 45%;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.auth .talk{
+    margin-right: .75rem;
+    color: salmon;
+}
+.share{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+.share .sound, .copy{
+    margin-right: 1.5rem;
+}
+.sound, .copy, .tweet{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border: 0.15rem solid salmon;
+    border-radius: 50%;
+    padding: .5rem;
+
+}
+.sound:hover{
+    color: rgb(227, 69, 236);
+    transition: all .3s ease-in-out;
+    transform: scale(1.1,1.1);
+}
+
+.copy:hover{
+    color: rgb(101, 227, 220);
+    transition: all .3s ease-in-out;
+    transform: scale(1.1,1.1);
+}
+
+.tweet:hover{
+    color: rgb(37, 148, 238);
+    transition: all .3s ease-in-out;
+    transform: scale(1.1,1.1);
+}
+.renew{
+    margin-top: 2rem;
+    padding: 1rem;
+    
+}
+
+.renew button{
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    background-color: aliceblue;
+    border: 0.15rem solid salmon;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+.renew button:hover{
+    transform: scale(1.1,1.1);
+    color: aliceblue;
+    background-color: salmon;
+    font-size: 1.4em;
+}
+
+
+button.active{
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+
+.foot a{display: flex;
+    margin: 2.5rem 0 2rem;
+    text-align: center;
+    justify-content: center;
+    font-size: .75rem;
+    color: var(--text-color-light);
+}
